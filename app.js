@@ -73,18 +73,21 @@ app.use(passport.session())
 
 //set global var 
 app.use(function (req, res, next) {
+    app.locals.ok = 12;
     res.locals.user = req.user || null
+    console.log("global vriable:" + res.locals.user);
     next()
 })
 
 //Static Folder
 app.use(express.static(path.join(__dirname, 'public')))
+// app.use(express.static('public'));
 
 //Routes
 app.use('/', require('./routes/index'))
 app.use('/auth', require('./routes/auth'))
 app.use('/stories', require('./routes/stories'))
-
+app.use('/register',require('./routes/registration'))
 
 
 const PORT = process.env.PORT || 3000;
