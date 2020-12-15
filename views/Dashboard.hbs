@@ -1,6 +1,8 @@
-<h6>Dashboard</h6>
-<h3>Welcome {{name}}</h3>
+<h6 style="font-size: 50px;">Dashboard</h6>
+<h3 class="animate-rotate-1">Welcome {{name}}</h3>
 <p>Here are your stories</p>
+
+
 {{#if stories}}
 
 <table class="striped">
@@ -15,7 +17,7 @@
     <tbody>
         {{#each stories}}
         <tr>
-            <td><a href="/stories/{{_id}}">{{title}}</a></td>
+            <td><a style="color:seashell; font-weight: 800;" href="/stories/{{_id}}">{{title}}</a></td>
             <td>{{formatDate createAt 'MMMM Do YYYY,h:mm:ss a'}}</td>
             <td><span class="dash-status">{{status}}</span></td>
             <td>

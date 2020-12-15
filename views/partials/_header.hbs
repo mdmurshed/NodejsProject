@@ -1,11 +1,18 @@
-<nav class="grey darken-3">
+<nav class="grey darken-3" style="height:100px;">
     <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo center">StoryBooks</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="fas fa-bars"></i></a>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="/stories">Public Stories</a></li>
-            <li><a href="/dashboard">dashboard</a></li>
-            <li><a href="/auth/logout">Logout</a></li>
-        </ul>
+        <div style="padding:15px">
+            <a href="#!" class="brand-logo center"> <i class="fas fa-book-reader"></i> StoryBooks</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="fas fa-bars"></i></a>
+            <div class="sidenav" id="mobile-demo" style="background-color:#FFF3F1;">
+                <li style="margin-top:-35px;"> <a href=""> <i class="fas fa-book-reader"></i><h4>StoryBooks </h4></a></li>
+                <br>
+                <ul >
+                    <li><a href="/stories"><i class="fas fa-user-friends"></i> <b> Public Stories </b></a></li>
+                    <li><a href="/dashboard"><i class="fas fa-tachometer-alt"></i> <b> Dashboard </b></a></li>
+                    <li><a href="/auth/logout"><i class="fas fa-skull-crossbones"></i> <b>Logout </b></a></li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 </nav>

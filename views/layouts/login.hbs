@@ -2,93 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>StoryBooks Login</title>
-    <style>
-        body {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <title>StoryBooks Login</title>
+  <style>
 
-            background-color: antiquewhite;
-            margin: 0;
-            padding: 0%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #mr {
-            margin: 10px 5px;
-        }
-
-        .header {
-            background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.35)),
-                url(/picture/Longin.jpg)center center no-repeat;
-            width: 100%;
-            background-size: 100%;
-            position: relative;
-            height: 800px;
-        
-
-            display: flex;
-            display: inline-flex;
-        }
-        .logCard{
-            margin-left: -15px;
-            margin-top: 80px;
-        }
-        .logtext{
-            padding: 161px;
-            width: 717px;
-            color: aliceblue;
-            font-size: large;
-            font-family: 'Langar', cursive;
-        }
-        #Story{
-            font-size: 60px;
-            font-weight: bold;
-        }
-        .text-id{
-            font-weight:400;
-            font-size: 20px;
-        }
-        .card-1{
-            border: 1px solid;
-            box-shadow: 4px 6px black;
-        }
-        .lead{
-            color:white;
-            font-weight: 600;
-        }
-        .footer{
-           background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.85)),center center no-repeat;
-           height: 260px;
-        }
-    </style>
+  </style>
 </head>
 
 <body>
 
-    <div class="header">
-         <div class="logtext">
-            <h3 id='Story'><i class="fas fa-book-reader"></i>    Story Books</h3>
-            <div class="section">
-                <p class="text-id">This web site is for those user who interested for new writing and post there own creativity</p>
-            </div>
-        </div>
-        <div class="logCard">
-            {{{body}}}
-        </div>
+  <div class="header">
+    <div class="logtext">
+      <h3 id='Story' ><i class="fas fa-book-reader" ></i> Story Books</h3>
+      <div class="section">
+        <p class="text-id">This web site is for those user who interested for new writing and post there own creativity
+        </p>
+      </div>
     </div>
-    <div class="footer">
-        {{!-- <h3 style="margin:0px;color:white">Murshed</h3> --}}
+    <div class="logCard">
+      {{{body}}}
     </div>
+  </div>
+  {{!-- template footer --}}
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6" id='about'>
+          <h6>About</h6>
+          <p class="text-justify">
+            write about of my web page............................................................
+          </p>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; Author:Murshed
+            </p>
+          </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a href="https://facebook.com/?lang=en" id="icon-style"> <i class="fab fa-facebook"></i></a> </li>
+              <li><a href="https://twitter.com/?lang=en" id="icon-style" id="icon-style"> <i
+                    class="fab fa-twitter"></i></a> </li>
+              <li><a href="https://linkedin.com/?lang=en" id="icon-style"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
