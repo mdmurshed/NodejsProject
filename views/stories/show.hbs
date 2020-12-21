@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row" >
     <div class="col s12 m8">
         <h3>{{story.title}}
             <small>{{{editIcon story.user user story._id false}}}</small>
         </h3>
-        <div class="card story">
-            <div class="card-content">
+        <div class="card story" >
+            <div class="card-content" id="showCard">
                 <span class="card-title">{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
                 {{{story.body}}}
             </div>
