@@ -54,7 +54,7 @@ body {
 .card-1{
     border: 1px solid;
     box-shadow: 1px 2px black;
-    height: 460px;
+    height: 470px;
     width: 460px;
 }
 .card-1:hover{
