@@ -26,4 +26,9 @@ body {
 #showCard{
     overflow:auto;
     height: 700px;
+   
+}
+#big:hover{
+    font-size: 60px;
+    color:wheat;
 }
