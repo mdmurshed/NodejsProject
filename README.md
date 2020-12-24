@@ -10,7 +10,7 @@ All data is secured and is you are able recover your data when you want.
 
 step 1:Downlode the zip file
 
-step 2:zip the project
+step 2:unzip the project
 
 step 3:install the all module: npm install
 
