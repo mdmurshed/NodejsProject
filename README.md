@@ -22,8 +22,8 @@ step 6:channge the google client secret.resource file(config/config.env)
 
 step 7:Change the email and password to send email to user.Resource file(helper/private.js)
 
-step 7:For development: npm run dev
+step 8:For development: npm run dev
 
-step 8:For production: npm run start
+step 9:For production: npm run start
 
 Thank you.
