@@ -5,6 +5,7 @@ const ensureAuth = require('../middleware/auth')
 
 const register = require('../models/register')
 const Story = require('../models/Story')
+const transporter = require("../helpers/private")
 
 router.get('/', (req, res) => {
 
@@ -19,6 +20,21 @@ router.post('/', (req, res) => {
         if (docs.length == 0) {
             // console.log(req.body)
             if (req.body.password1 == req.body.password2) {
+                var mailOptions = {
+                    from: 'mdmurshedulhoque1111@gmail.com',
+                    to: req.body.email,
+                    subject: 'Account info:',
+                    text: 'User name: ' + req.body.fullname + " \nUser Email: " + req.body.email + " ,\n Password: " + req.body.password1
+                  };
+                  
+                  transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                      console.log(error);
+                    } else {
+                      console.log('Email sent: Done,' + info.response);
+                    }
+                  });
+
                 newUser.fullname = req.body.fullname;
                 newUser.email = req.body.email;
                 newUser.password = req.body.password1;
@@ -35,8 +51,8 @@ router.post('/', (req, res) => {
                 res.redirect('register')
             }
         } else {
-            res.render('register', {
-                NameError: "Same name try diffrent name."
+            res.render('registration', {
+                layout: 'login'
             })
         }
     })
